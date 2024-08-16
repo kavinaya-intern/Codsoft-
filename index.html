@@ -1,36 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRINKETS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="nav.js" defer></script>
 </head>
 <body>
-<div id="calculator">
-<input id="display" readonly>
-<div id="keys">
-    <button onclick="appendToDisplay('+')">+</button>
-    <button onclick="appendToDisplay('7')">7</button>
-    <button onclick="appendToDisplay('8')">8</button>
-    <button onclick="appendToDisplay('9')">9</button><br>
-    <button onclick="appendToDisplay('-')">-</button>
-    <button onclick="appendToDisplay('4')">4</button>
-    <button onclick="appendToDisplay('5')">5</button>
-    <button onclick="appendToDisplay('6')">6</button><br>
-    <button onclick="appendToDisplay( '*')">*</button>
-    <button onclick="appendToDisplay('1')">1</button>
-    <button onclick="appendToDisplay('2')">2</button>
-    <button onclick="appendToDisplay('3')">3</button><br>
-    <button onclick="appendToDisplay('/')">/</button>
-    <button onclick="appendToDisplay('0')">0</button>
-    <button onclick="appendToDisplay('.')">.</button> 
-    <button onclick="calculate()">=</button><br>
-    <button onclick="clearDisplay ()">C</button>
-    </div>
-</div>
+    <header class="header">
+        <div class="logo">
+            <h1>TRINKETS</h1>
+        </div>
+        <nav>
+            <div class="menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar">
+                <li><a href="#Home"><button>Home</button></a></li>
+                <li><a href="#About"><button>About</button></a></li>
+                <li><a href="#Service"><button>Service</button></a></li>
+                <li><a href="#Product"><button>Product</button></a></li>
+                <li><a href="#Contact"><button>Contact</button></a></li>
+            </ul>
+        </nav>
+    </header>
 
-</div>
-<script src="index.js"></script>
+    <!-- Other sections of the website -->
+    <section class="sectiondiv" id="Home">
+        <div class="section-content"> </div>
+        <div class="image-container">
+            <img src="jewel.jpg" alt="Image" width="200px" height="200px">
+            <img src="download.jpeg" alt="Image" width="200px" height="200px">
+            <img src="jewel.3.webp" alt="Image" width="200px" height="200px">
+            <img src="jewel.jpg" alt="Image" width="200px" height="200px">
+            <img src="jewel.3.jpeg" alt="Image" width="200px" height="200px">
+            <img src="jewel.2.webp" alt="Image" width="200px" height="200px">
+            <img src="kka.avif" alt="Image" width="200px" height="200px">
+        </div>
+        <img src="end-line-clipart.png" alt="Image" width="1500px" height="180px">
+        <div class="absolute" id="About">
+            <h1>TRINKETS</h1>
+            <b>"Jewellery has the power to be the one little thing that makes you feel unique"</b>
+            <h1>ABOUT</h1>
+            <h4>You can shop at anytime and from anywhere. Trinkets is an e-commerce website for accessories,
+                where you can shop the products directly from us. Indian jewellery trends should be on top of your radar
+                as the primary style support.
+                Whether it’s occasional or everyday wear, a look is never complete without a smattering of jewels,
+                especially if you belong to a country with traditional styles. It is an easy shopping platform which
+                will be very
+                convenient to use.
+                <h2>Our Mission</h2>
+                Our mission at Trinkets is to create premium accessories for all that go beyond their beauty.
+                <h2>Our Vision</h2>
+                We envision a world where everyone embraces self-confidence and enhances their fashion sense.
+            </h4>
+            <div class="relative" id="Service"></div>
+            <h1>SERVICE</h1>
+            <h4> Our service is done on an online platform where our service is a one-stop destination for all your
+                accessories needs and cravings.
+                You can buy our products directly from us. This is our own and official website where you can directly
+                purchase from us.
+                Our contact details are shared at the top of the website so that you can contact us directly. And our
+                customer service is available 24 hours a day,
+                so you can purchase from Trinkets anytime and from anywhere. Our customer service is available 24 hours
+                so we can help you from anywhere and at any time.
+            </h4>
+        </div>
+        <img src="end-line-clipart.png" alt="Image" width="1500px" height="180px">
+        <div class="object">
+            <h1>OUR PRODUCT</h1>
+        </div>
+        <div class="row" id="Product">
+            <div class="column">
+                <img src="aa.webp" alt="jewel" width="250px" height="250px">
+                <p>Pearl chain</p>
+                <p>Price: 60INR</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="jew">
+                <img src="ka.avif" alt="jewel" width="250px" height="250px">
+                <p>Pearl chain</p>
+                <p>Price: 60INR</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="chains">
+                <img src="pp.jpeg" alt="jewel" width="250px" height="250px">
+                <p>Pearl chain</p>
+                <p>Price: 60INR</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="chain">
+                <img src="OIP.jpeg" alt="jewel" width="250px" height="250px">
+                <p>Pearl chain</p>
+                <p>Price: 60INR</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="bracelers">
+                <img src="arv.jpg" alt="jewel" width="250px" height="250px">
+                <p>Pearl chain</p>
+                <p>Price: 60INR</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="bracelet">
+                <img src="OIP.jpeg" alt="jewel" width="250px" height="250px">
+                <p>Pearl chain</p>
+                <p>Price: 60INR</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <img src="end-line-clipart.png" alt="Image" width="1500px" height="180px">
+        <div class="hii" id="Contact"></div>
+        <div class="end">
+            <h1>CONTACT US:</h1>
+            <h3>Address: 232, Velachery, Chennai-100</h3>
+            <h3>Contact: 0123456789</h3>
+            <h3>Email: Trinkets@gmail.com</h3>
+            <h3>Instagram, Facebook & YouTube: @Trinkets</h3>
+        </div>
+        <img src="end-line-clipart.png" alt="Image" width="1500px" height="180px">
+    </section>
+    <footer>
+        <div class="footer">
+            <p>Trinkets</p>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Product">Product</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Products</p>
+            <ul>
+                <li><a href="#Product">Bracelet</a></li>
+                <li><a href="#Product">Chains</a></li>
+                <li><a href="#Product">Earrings</a></li>
+                <li><a href="#Product">Pearl chains</a></li>
+                <li><a href="#Product">Bangles</a></li>
+            </ul>
+        </div>
+    </footer>
+    <footer>
+        <div class="para">
+            <center>
+                <h5>TRINKETS@gmail.com, Some rights reserved</h5>
+            </center>
+        </div>
+    </footer>
 </body>
 </html>
